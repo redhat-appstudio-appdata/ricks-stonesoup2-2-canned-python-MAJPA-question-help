@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-qbaw
+  namespace: rhn-support-rick-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1279d62c3636b2138c2451aa88a0f72234457406da383bf083ac803de8a24fcf
+        name: my-python
+        resources: {}
+status: {}
